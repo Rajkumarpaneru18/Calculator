@@ -1,18 +1,38 @@
-//here is a function to clear the screen
+(function (){
+    let screen=document.querySelector('.display');
+    let clearScreen= document.querySelector('.clrbtn');
+    let valueGiven= document.querySelectorAll('.btn');
+    let calculateResult=document.querySelector('.calculate');
 
-function clearDisplayUnit(){ 
-    document.getElementById("result").value="";
-}
-
-//function to show the result
-function display(value){ 
-    document.getElementById("result").value+=value;
-}
-
-//function to calculate  the result of the given input
-
-function calculate(){
-    var  firstVar=document.getElementById("result").value;
-    var secondVar= eval(firstVar);
-    document.getElementById("result").value=secondVar;
-}
+    //taking the value when click any button
+    valueGiven.forEach(function(button){ 
+        button.addEventListener('click', function(e){ 
+            let value= e.target.dataset.get;
+            screen.value+=value;
+        });
+    });
+    
+    calculateResult.addEventListener('click',function(e){ 
+        if(screen.value===''){ 
+            screen.value="";
+        }
+        else{ 
+            //evaluating the result of the expression 
+            let result= eval(screen.value);
+            if(isNaN(result)){ 
+                screen.value="Math error";
+            }
+            else if(result===Infinity){ 
+                screen.value="∞";
+            }
+            else{ 
+                screen.value=result;
+            }
+            
+        }
+        
+    });
+    clearScreen.addEventListener('click', function(e){ 
+        screen.value="";
+    });
+    })();
