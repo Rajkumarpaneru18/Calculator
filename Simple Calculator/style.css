@@ -3,8 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{ 
     background-color: blue;
+}
+h1{ 
+    margin-top: 20px;
+    margin-right: 15px;
+    text-align: center;
+    color: rgb(14, 209, 63);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font: bold;
 }
 .calculator{ 
     padding: 20px;
@@ -13,11 +23,10 @@ body{
     width: 300px;
     height:475px;
     border: 2px solid #999999;
-    margin-top: 7%;
     margin-left: 38%;
 }
 .display{ 
-    width: 124%;
+    width: 125%;
     height: 100px;
     font-size: 25px;
     cursor: pointer;
@@ -31,13 +40,27 @@ body{
     width: 50px;
     height: 50px;
     border: 0;
-    
     border-radius: 30px;
     background-color:red;
     transition: all 300ms ease;
 
 }
 #btn:hover{ 
+    width: 50px;
+    height: 50px;
+    border: 0;;
+    border-radius: 30px;
+    background-color: #66ffff;
+}
+.delete{ 
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 30px;
+        background-color:red;
+        transition: all 300ms ease; 
+}
+.delete:hover{ 
     width: 50px;
     height: 50px;
     border: 0;;
