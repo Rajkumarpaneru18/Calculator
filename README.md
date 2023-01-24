@@ -1,7 +1,7 @@
 # JavaScript-Project
 A Simple Calculator built using HTML,CSS and JavaScript.
 
-![Calculator Preview Image](https://drive.google.com/drive/u/1/folders/1APUMte_-0-PuqwTnf03Ws5Crk44qoyIM);
+![Calculator Preview Image](https://github.com/Rajkumarpaneru18/Calculator/blob/main/images/calculatorpreview.png)
 
 
 * Favicon from:
