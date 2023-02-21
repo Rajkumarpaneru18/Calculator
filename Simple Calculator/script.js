@@ -107,6 +107,14 @@
         //decimal symbol
         if(e.key===".")
             screen.value+=".";
+        //open bracket 
+        else if(e.key==="("){ 
+            screen.value+="(";
+        }
+        //close bracket
+        else if(e.key===")"){ 
+            screen.value+=")";
+        }
             //key to calculate the result 
         else if(e.key==="Enter"){
             const result= eval(screen.value);
